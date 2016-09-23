@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorGray"
+        android:id="@+id/head_border_top"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ll_item"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorGray"
+            android:visibility="visible" />
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_item_withdrawdash_customer"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="2dp"
+            android:textColor="@color/textcolorBlack"
+            android:text="客户"/>
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorGray"
+            android:visibility="visible" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="2dp"
+            android:textColor="@color/textcolorBlack"
+            android:id="@+id/tv_item_withdrawdash_amount"
+            android:text="房贷金额"/>
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorGray"
+            android:visibility="visible" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="2dp"
+            android:textColor="@color/textcolorBlack"
+            android:id="@+id/tv_item_withdrawdash_rebate"
+            android:text="返点"/>
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorGray"
+            android:visibility="visible" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="2dp"
+            android:textColor="@color/textcolorBlack"
+            android:id="@+id/tv_item_withdrawdash_reward"
+            android:text="成单奖励"/>
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorGray"
+            android:visibility="visible" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/textcolorBlack"
+            android:padding="2dp"
+            android:id="@+id/tv_item_withdrawdash_profit"
+            android:text="所获收益"/>
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorGray"
+            android:visibility="visible" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

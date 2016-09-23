@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="cn.zhudai.zin.zhudaibao.activity.CheckLoanScheduleActivity">
+    <include layout="@layout/view_mytoolbar"/>
+
+   <!-- <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/colorLightGray"/>-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_tip"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="16sp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:visibility="gone"
+       />
+    <LinearLayout
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_width="0px"
+        android:layout_height="0px"/>
+    <ScrollView android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="10dp">
+                    <EditText
+                        android:id="@+id/et_search_name"
+                        android:layout_width="0dp"
+                        android:layout_height="35dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/et_border_shape"
+                        android:ems="10"
+                        android:paddingLeft="10dp"
+                        android:gravity="fill|center_vertical"
+                        android:hint="请输入客户姓名"
+                        android:singleLine="true"
+                        android:textColor="#000"
+                        android:textColorHint="@color/colorGray"
+                        android:textSize="@dimen/textSize_edit"/>
+                    <EditText
+                        android:id="@+id/et_search_phone"
+                        android:layout_width="0dp"
+                        android:layout_height="35dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/et_border_shape"
+                        android:ems="10"
+
+                        android:gravity="fill|center_vertical"
+                        android:hint="输入客户手机号码"
+                        android:inputType="phone"
+                        android:paddingLeft="10dp"
+                        android:singleLine="true"
+                        android:textColor="#000"
+                        android:textColorHint="@color/colorGray"
+                        android:textSize="@dimen/textSize_edit"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="10dp"
+
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="35dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:layout_marginRight="15dp"
+                        android:background="@drawable/et_border_shape">
+                        <EditText
+                            android:id="@+id/et_search_sum"
+                            android:layout_width="0dp"
+                            android:layout_height="35dp"
+                            android:paddingLeft="10dp"
+                            android:layout_weight="8"
+                            android:background="@null"
+
+                            android:gravity="fill|center_vertical"
+                            android:hint="请输入贷款金额"
+                            android:inputType="number"
+                            android:singleLine="true"
+                            android:textColor="#000"
+                            android:textColorHint="@color/colorGray"
+                            android:textSize="@dimen/textSize_edit"/>
+                        <ImageView
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+
+                            android:background="@color/colorLightGray"/>
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:gravity="fill|center_vertical"
+                            android:text="万元"
+                            android:textColor="@color/textColorBrown"/>
+                    </LinearLayout>
+                    <EditText
+                        android:id="@+id/et_search_state"
+                        android:layout_width="0dp"
+                        android:layout_height="35dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/et_border_shape"
+                        android:drawableRight="@drawable/ic_arrow_drop_down_black_24dp"
+                        android:ems="10"
+                        android:editable="false"
+                        android:gravity="fill|center_vertical"
+                        android:hint="请选择处理状态"
+                        android:paddingLeft="10dp"
+                        android:singleLine="true"
+                        android:textColor="#000"
+                        android:textColorHint="@color/colorGray"
+                        android:textSize="@dimen/textSize_edit"/>
+
+                </LinearLayout>
+                <Button
+                    android:id="@+id/bt_submit"
+                    android:layout_width="110dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/bt_blue_selector"
+                    android:gravity="center"
+                    android:layout_gravity="center_horizontal"
+                    android:text="查  询"
+                    android:textColor="#ffffff"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="@dimen/textSize_btn" />
+
+                <include layout="@layout/view_gray_splitline"/>
+            </LinearLayout>
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/pb_loading"
+                android:layout_gravity="center_horizontal"/>
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_load_schedule"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="vertical"
+               >
+            </android.support.v7.widget.RecyclerView>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

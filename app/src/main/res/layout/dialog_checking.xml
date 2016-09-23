@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:text="提示"
+        android:layout_marginTop="10dp"
+
+        android:gravity="center"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="个人资料正在审核中，请稍候！"
+        android:layout_marginTop="10dp"
+        android:textSize="14sp"
+        android:textColor="@color/colorGray"
+        android:gravity="center"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorLightGray"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bt_positive"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="确定"
+        android:textColor="@color/colorBule"
+        android:background="@android:color/white"/>
+
+</LinearLayout>

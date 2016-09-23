@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="35dp"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="?attr/listPreferredItemHeightSmall"
+        android:paddingLeft="?attr/listPreferredItemPaddingLeft"
+        android:paddingRight="?attr/listPreferredItemPaddingRight"
+        android:drawablePadding="10dp"
+
+        android:gravity="center_vertical|start"
+        android:maxLines="1"
+        android:textColor="@color/textcolorBlack"
+        android:id="@+id/tv_menu_item"
+        />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/ic_item_arrow_240"/>
+
+
+
+</RelativeLayout>
+
+
+
+    <!--
+    <?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        >
+
+        <TextView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/listPreferredItemHeightSmall"
+            android:paddingLeft="?attr/listPreferredItemPaddingLeft"
+            android:paddingRight="?attr/listPreferredItemPaddingRight"
+            android:drawablePadding="32dp"
+            android:gravity="center_vertical|start"
+            android:maxLines="1"
+            android:id="@+id/tv_menu_item"
+            android:textAppearance="?attr/textAppearanceListItem"
+            android:textColor="?android:attr/textColorPrimary"/>
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/gray_line_right_arrow"/>
+
+
+    </RelativeLayout>
+
+
+    -->

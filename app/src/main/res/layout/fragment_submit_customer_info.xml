@@ -1,0 +1,285 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              tools:context=".activity.UserInfomationActivity"
+              >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/editview_vertical_spacing"
+            android:layout_marginBottom="@dimen/editview_vertical_spacing"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center_vertical"
+            >
+
+            <EditText
+                android:id="@+id/et_user_realname"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_weight="1"
+                android:background="@drawable/et_border_shape"
+                android:maxLength="10"
+
+                android:hint="填写客户真实姓名"
+                android:paddingLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:singleLine="true"
+                android:textColorHint="@color/colorGray"
+                android:textSize="@dimen/textSize_edit" />
+
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:id="@+id/rg_sex"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                >
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/textColorGray"
+                    android:id="@+id/rb_sex_male"
+                    android:checked="true"
+                    android:layout_marginRight="5dp"
+                    android:button="@null"
+                    android:drawableLeft="@drawable/rb_selector"
+                    android:text="先生"/>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/textColorGray"
+                    android:id="@+id/rb_sex_female"
+                    android:button="@null"
+                    android:layout_marginRight="5dp"
+                    android:drawableLeft="@drawable/rb_selector"
+                    android:text="女士"/>
+            </RadioGroup>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="@dimen/editview_vertical_spacing"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+           <!-- <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="联系方式"/>-->
+            <EditText
+                android:id="@+id/et_user_phone"
+                android:layout_width="match_parent"
+                android:layout_marginRight="10dp"
+                android:layout_height="35dp"
+                android:paddingLeft="10dp"
+                android:background="@drawable/et_border_shape"
+                android:inputType="phone"
+                android:hint="填写客户联系方式"
+                android:singleLine="true"
+                android:textColorHint="@color/colorGray"
+                android:textSize="@dimen/textSize_edit" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="@dimen/editview_vertical_spacing"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+
+            <EditText
+                android:id="@+id/et_user_city"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/et_border_shape"
+                android:maxLength="10"
+                android:paddingLeft="10dp"
+                android:hint="选择客户所在城市"
+                android:drawableRight="@drawable/ic_arrow_drop_down_black_24dp"
+                android:singleLine="true"
+
+                android:editable="false"
+                android:textColorHint="@color/colorGray"
+                android:textSize="@dimen/textSize_edit" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="@dimen/editview_vertical_spacing"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+
+            <EditText
+                android:id="@+id/et_user_oan_amount"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_weight="1"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/et_border_shape"
+                android:maxLength="10"
+                android:paddingLeft="10dp"
+                android:hint="填写客户贷款金额"
+                android:inputType="number"
+                android:singleLine="true"
+                android:textColorHint="@color/colorGray"
+                android:textSize="@dimen/textSize_edit" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="万元"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="@dimen/editview_vertical_spacing"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="有无房产："/>
+
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:id="@+id/rg_hashouse"
+                android:editable="false"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/textColorGray"
+                    android:id="@+id/rb_hashouse_yes"
+                    android:checked="true"
+                    android:button="@null"
+                    android:drawableLeft="@drawable/rb_selector"
+                    android:layout_marginRight="10dp"
+                    android:text="有"/>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/textColorGray"
+                    android:id="@+id/rb_hashouse_no"
+                    android:button="@null"
+
+                    android:drawableLeft="@drawable/rb_selector"
+                    android:text="无"/>
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="是否有车："/>
+
+
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:id="@+id/rg_hascar"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/textColorGray"
+                    android:id="@+id/rb_hascar_yes"
+                    android:checked="true"
+                    android:button="@null"
+                    android:drawableLeft="@drawable/rb_selector"
+                    android:layout_marginRight="10dp"
+                    android:text="有"/>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/textColorGray"
+                    android:id="@+id/rb_hascar_no"
+                    android:button="@null"
+                    android:drawableLeft="@drawable/rb_selector"
+                    android:text="无"/>
+            </RadioGroup>
+        </LinearLayout>
+        <include layout="@layout/view_gray_splitline"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="@dimen/editview_vertical_spacing"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/cb_ischeck"
+                android:button="@null"
+                android:drawableLeft="@drawable/checkbox_selector"
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="已告知客户助贷宝将为他提供贷款服务"/>
+
+
+
+        </LinearLayout>
+        <Button
+            android:id="@+id/bt_submit"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/bt_blue_selector"
+            android:gravity="center"
+            android:text="提  交"
+
+            android:textColor="#ffffff"
+            android:layout_marginBottom="20dp"
+            android:textSize="@dimen/textSize_btn" />
+
+
+    </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

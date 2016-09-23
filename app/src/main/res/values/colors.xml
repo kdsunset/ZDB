@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+ <color name="colorPrimary">#3F51B5</color>
+
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorButtontintBlue">#52C0F1</color>
+    <color name="colorButtontintBlueTransparent">#8852C0F1</color>
+    <color name="colorButtondeeptBlue">#009ADE</color>
+    <color name="colorButtondeeptBlueTransparent">#88009ADE</color>
+    <color name="colorGray">#C9C7C7</color>
+    <color name="colorLightGray">#E5E5E5</color>
+   <color name="colorLightGrayT">#88E5E5E5</color>
+
+    <color name="colorGrayTransparent">#88C9C7C7</color>#3F6ED4
+    <color name="colorBule">#3F6ED4</color>
+    <color name="colorBuleTransparent">#883F6ED4</color>
+    <color name="textcolorBlack">#343434</color>
+    <color name="textColorBrown">#4d362d</color>
+    <color name="textColor_Bar_Title">#203EA2</color>
+    <color name="textColorGray">#666</color>
+</resources>

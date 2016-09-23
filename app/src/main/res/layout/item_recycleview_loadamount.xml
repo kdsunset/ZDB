@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorGray"
+        android:id="@+id/border_top"
+        android:visibility="visible" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ll_item"
+
+        android:orientation="horizontal">
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorGray"
+            android:id="@+id/border_left"
+            android:visibility="visible" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_item_key"
+            android:layout_weight="6"
+            android:paddingTop="5dp"
+            android:textColor="@color/textcolorBlack"
+            android:paddingBottom="5dp"
+            android:gravity="center_horizontal"
+            android:text="累计放款金额"/>
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorGray"
+            android:visibility="visible" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:paddingTop="5dp"
+            android:textColor="@color/textcolorBlack"
+            android:gravity="center_horizontal"
+            android:paddingBottom="5dp"
+            android:id="@+id/tv_item_value"
+            android:text="返点"/>
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorGray"
+            android:id="@+id/border_right"
+            android:visibility="gone"
+            />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorGray"
+        android:id="@+id/border_bottom"
+        android:visibility="gone"
+        />
+
+</LinearLayout>

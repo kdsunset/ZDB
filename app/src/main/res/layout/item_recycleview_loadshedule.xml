@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        >
+        <ImageView
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/main_icon_45"
+            android:id="@+id/iv_load_status"
+            android:scaleType="centerCrop"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="10dp"
+            />
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_centerInParent="true"
+           android:orientation="vertical">
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:id="@+id/tv_customer"
+               android:paddingBottom="5dp"
+               android:textColor="@color/textcolorBlack"
+               android:text="张伟,贷款155W,联系方式:13570291111 2016-05-31 18:01:53"/>
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:id="@+id/tv_usermanager"
+
+               android:textColor="@android:color/black"
+               android:text="客户经理：助贷大经理 手机：18612345678"/>
+       </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

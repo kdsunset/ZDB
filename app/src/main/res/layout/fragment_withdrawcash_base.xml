@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:id="@+id/ll_root_bankcard">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        >
+
+
+        <EditText
+            android:id="@+id/et_realname_bankcard"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="@dimen/editview_vertical_spacing"
+            android:background="@drawable/et_border_shape"
+            android:ems="10"
+            android:singleLine="true"
+            android:hint="请输入真实姓名"
+            android:paddingLeft="10dp"
+            android:gravity="fill|center_vertical"
+            android:textColor="#000"
+            android:textColorHint="@color/colorGray"
+            android:textSize="@dimen/textSize_edit" />
+        <EditText
+            android:id="@+id/et_withdraw_amount_bankcard"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="@dimen/editview_vertical_spacing"
+            android:background="@drawable/et_border_shape"
+            android:ems="10"
+            android:singleLine="true"
+            android:paddingLeft="10dp"
+            android:hint="请输入提现金额"
+            android:inputType="number"
+            android:textColor="#000"
+            android:gravity="fill|center_vertical"
+            android:textColorHint="@color/colorGray"
+            android:textSize="@dimen/textSize_edit" />
+
+
+        <EditText
+            android:id="@+id/et_bank_Name_bankcard"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="@dimen/editview_vertical_spacing"
+            android:background="@drawable/et_border_shape"
+            android:ems="10"
+            android:paddingLeft="10dp"
+            android:singleLine="true"
+            android:hint="请输入银行名称"
+
+            android:textColor="#000"
+            android:gravity="fill|center_vertical"
+            android:textColorHint="@color/colorGray"
+            android:textSize="@dimen/textSize_edit" />
+
+        <EditText
+            android:id="@+id/et_bank_ID_bankcard"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="@dimen/editview_vertical_spacing"
+            android:background="@drawable/et_border_shape"
+            android:ems="10"
+            android:paddingLeft="10dp"
+            android:singleLine="true"
+            android:hint="请输入银行卡卡号"
+
+            android:textColor="#000"
+            android:gravity="fill|center_vertical"
+            android:textColorHint="@color/colorGray"
+            android:textSize="@dimen/textSize_edit" />
+        <EditText
+            android:id="@+id/et_phone_bankcard"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="@dimen/editview_vertical_spacing"
+            android:background="@drawable/et_border_shape"
+            android:ems="10"
+            android:singleLine="true"
+            android:hint="联系电话"
+            android:paddingLeft="10dp"
+            android:inputType="phone"
+            android:textColor="#000"
+            android:gravity="fill|center_vertical"
+            android:textColorHint="@color/colorGray"
+            android:textSize="@dimen/textSize_edit" />
+
+        <Button
+            android:id="@+id/bt_action_bankcard"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="@dimen/editview_vertical_spacing"
+            android:background="@drawable/bt_blue_selector"
+            android:gravity="center"
+            android:text="申 请 提 现"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/textSize_btn" />
+
+    </LinearLayout>
+</LinearLayout>

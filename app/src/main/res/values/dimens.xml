@@ -1,0 +1,15 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="drawer_icon_size">24dp</dimen>
+    <dimen name="item_divider_height">10dp</dimen>
+    <dimen name="editview_vertical_spacing">15dp</dimen>
+    <dimen name="main_recycler_margin_left">15dp</dimen>
+    <dimen name="textSize_edit">15sp</dimen>
+    <dimen name="textSize_btn">16sp</dimen>
+    <dimen name="textSize_tiptv">13sp</dimen>
+    <dimen name="textSize_title">21sp</dimen>
+    <dimen name="textSize_smallest">12sp</dimen>
+
+</resources>

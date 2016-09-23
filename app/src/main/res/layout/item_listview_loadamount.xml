@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ll_item"
+
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_item_key"
+            android:layout_weight="6"
+            android:paddingTop="5dp"
+
+            android:paddingBottom="5dp"
+            android:gravity="center_horizontal"
+            android:background="@drawable/border_shape"
+            android:text="累计放款金额"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:paddingTop="5dp"
+            android:gravity="center_horizontal"
+            android:paddingBottom="5dp"
+            android:id="@+id/tv_item_value"
+            android:background="@drawable/border_shape"
+            android:text="返点"/>
+
+    </LinearLayout>
+
+</LinearLayout>

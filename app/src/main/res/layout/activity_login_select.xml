@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_bg"
+    tools:context="cn.zhudai.zin.zhudaibao.activity.LoginSelectActivity">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tv_copyright1"
+        android:layout_marginBottom="20dp"
+        android:layout_centerInParent="true"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:text="登录"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            android:background="@drawable/bt_register_selector"
+
+            android:id="@+id/bt_login"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:background="@drawable/bt_login_selector"
+            android:text="注册"
+            android:textColor="#fff"
+            android:id="@+id/bt_register"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="广州小微投资咨询有限公司  Copyright  2013-2016"
+        android:textColor="@android:color/white"
+        android:textSize="14sp"
+        android:id="@+id/tv_copyright1"
+        android:layout_alignLeft="@+id/tv_copyright2"
+        android:layout_above="@+id/tv_copyright2"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="zhudai.com All Rights Reserved. 粤ICP备15039148号-3"
+        android:textColor="@android:color/white"
+        android:textSize="14sp"
+        android:id="@+id/tv_copyright2"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="20dp"
+        />
+
+</RelativeLayout>

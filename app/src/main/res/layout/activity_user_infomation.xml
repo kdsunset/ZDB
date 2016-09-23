@@ -1,0 +1,505 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+              android:orientation="vertical"
+                tools:context=".activity.UserInfomationActivity" >
+    <include layout="@layout/view_mytoolbar"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+       >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="真实姓名"/>
+            <EditText
+                android:id="@+id/et_user_realname"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_weight="1"
+                android:background="@drawable/et_border_shape"
+                android:maxLength="10"
+                android:hint="请填写真实姓名"
+                android:editable="false"
+                android:layout_marginRight="10dp"
+                android:singleLine="true"
+                android:textColorHint="@color/colorGray"
+                android:textSize="13sp" />
+
+            <RadioGroup
+                android:layout_width="0dp"
+                android:id="@+id/rg_sex"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:editable="false"
+                android:layout_weight="1">
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ccc"
+                    android:text="先生"/>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ccc"
+                    android:text="女士"/>
+            </RadioGroup>
+        </LinearLayout>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#C7C7C7"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="联系方式"/>
+            <EditText
+                android:id="@+id/et_user_phone"
+                android:layout_width="0dp"
+                android:layout_marginRight="10dp"
+                android:layout_height="35dp"
+                android:layout_weight="1"
+                android:editable="false"
+                android:background="@drawable/et_border_shape"
+                android:maxLength="10"
+                android:hint="请填写真实号码"
+                android:singleLine="true"
+                android:textColorHint="@color/colorGray"
+                android:textSize="13sp" />
+        </LinearLayout>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#C7C7C7"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="所在城市"/>
+            <EditText
+                android:id="@+id/et_user_city"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/et_border_shape"
+                android:maxLength="10"
+                android:editable="false"
+                android:hint="必填项"
+                android:singleLine="true"
+                android:textColorHint="@color/colorGray"
+                android:textSize="13sp" />
+        </LinearLayout>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#C7C7C7"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="贷款金额"/>
+            <EditText
+                android:id="@+id/et_user_oan_amount"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_weight="1"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/et_border_shape"
+                android:maxLength="10"
+                android:editable="false"
+                android:hint="必填项"
+                android:singleLine="true"
+                android:textColorHint="@color/colorGray"
+                android:textSize="13sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="万元"/>
+        </LinearLayout>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#C7C7C7"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text=" 年  龄 "/>
+            <EditText
+                android:id="@+id/et_user_age"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_weight="1"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/et_border_shape"
+                android:maxLength="10"
+                android:hint="必填项"
+                android:editable="false"
+                android:singleLine="true"
+                android:textColorHint="@color/colorGray"
+                android:textSize="13sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="岁"/>
+        </LinearLayout>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#C7C7C7"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="有无房产"/>
+
+
+            <RadioGroup
+                android:layout_width="0dp"
+                android:id="@+id/rg_hashouse"
+                android:editable="false"
+                android:layout_marginRight="10dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="1">
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ccc"
+                    android:text="有"/>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ccc"
+                    android:text="无"/>
+            </RadioGroup>
+        </LinearLayout>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#C7C7C7"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="是否有车"/>
+
+
+            <RadioGroup
+                android:layout_width="0dp"
+                android:id="@+id/rg_hascar"
+                android:layout_marginRight="10dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:editable="false"
+                android:layout_weight="1">
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ccc"
+                    android:text="有"/>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ccc"
+                    android:text="无"/>
+            </RadioGroup>
+        </LinearLayout>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#C7C7C7"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/cb_ischeck"
+                android:editable="false"
+               />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="已告知客户助贷宝将为他提供贷款服务"/>
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+<!--
+    <TextView android:layout_width="100dp"
+              android:layout_height="20dp"
+              android:text="客户提交资料"
+              android:textColor="@android:color/black"
+
+              android:layout_marginLeft="60dp"
+              android:layout_marginTop="50dp"
+        />
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/tiaozhuan2"/>
+
+
+
+
+    <TextView android:layout_width="100dp"
+              android:layout_height="20dp"
+              android:text="贷款专属二维码"
+              android:textColor="@android:color/black"
+
+              android:layout_marginLeft="240dp"
+              android:layout_marginTop="50dp"
+        />
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="205dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/tiaozhuan2"/>
+
+    <EditText
+        android:id="@+id/loginuser"
+        android:layout_width="130dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="90dp"
+        android:background="@drawable/login_editbox"
+        android:maxLength="10"
+        android:hint="请填写真是姓名"
+        android:textColorHint="#3D3D3D"
+        android:singleLine="true"
+        android:textColor="#000"
+        android:textSize="13sp" />
+    <CheckBox
+        android:id="@+id/cbrp111"
+        android:layout_width="80dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="90dp"
+        android:layout_marginLeft="150dp"
+
+        android:text="先生"
+        android:textColor="@android:color/black"
+        android:textSize="12sp" />
+
+    <CheckBox
+        android:id="@+id/cbrp222"
+        android:layout_width="80dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="90dp"
+        android:layout_marginLeft="200dp"
+
+        android:text="女士"
+        android:textColor="@android:color/black"
+        android:textSize="12sp" />
+
+
+    <EditText
+        android:id="@+id/loginuser2"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginTop="140dp"
+        android:background="@drawable/login_editbox"
+        android:maxLength="10"
+        android:hint="填写客户联系方式"
+        android:textColorHint="#3D3D3D"
+        android:singleLine="true"
+        android:textColor="#000"
+        android:textSize="13sp" />
+
+    <EditText
+        android:id="@+id/loginuser3"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginTop="190dp"
+        android:background="@drawable/login_editbox"
+        android:maxLength="10"
+        android:hint="填写客户所在城市"
+        android:textColorHint="#3D3D3D"
+        android:singleLine="true"
+        android:textColor="#000"
+        android:textSize="13sp" />
+
+    <EditText
+        android:id="@+id/loginuser4"
+        android:layout_width="250dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="240dp"
+        android:background="@drawable/login_editbox"
+        android:maxLength="10"
+        android:hint="填写客户贷款金额"
+        android:textColorHint="#3D3D3D"
+        android:singleLine="true"
+        android:textColor="#000"
+        android:textSize="13sp" />
+
+
+    <TextView android:layout_width="300dp"
+              android:layout_height="20dp"
+              android:text="万元"
+              android:textColor="@android:color/black"
+
+              android:layout_marginLeft="260dp"
+              android:layout_marginTop="250dp"
+
+        />
+
+    <TextView android:layout_width="300dp"
+              android:layout_height="20dp"
+              android:text="有无房产："
+              android:textColor="@android:color/black"
+
+              android:layout_marginLeft="0dp"
+              android:layout_marginTop="290dp"
+
+        />
+
+    <CheckBox
+        android:id="@+id/cbrp333"
+        android:layout_width="80dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="280dp"
+        android:layout_marginLeft="60dp"
+
+        android:text="有"
+        android:textColor="@android:color/black"
+        android:textSize="12sp" />
+
+    <CheckBox
+        android:id="@+id/cbrp444"
+        android:layout_width="80dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="280dp"
+        android:layout_marginLeft="100dp"
+
+        android:text="无"
+        android:textColor="@android:color/black"
+        android:textSize="12sp" />
+
+
+    <TextView android:layout_width="300dp"
+              android:layout_height="20dp"
+              android:text="是否有车："
+              android:textColor="@android:color/black"
+
+              android:layout_marginLeft="0dp"
+              android:layout_marginTop="320dp"
+
+        />
+
+    <CheckBox
+        android:id="@+id/cbrp555"
+        android:layout_width="80dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="310dp"
+        android:layout_marginLeft="60dp"
+
+        android:text="有"
+        android:textColor="@android:color/black"
+        android:textSize="12sp" />
+
+    <CheckBox
+        android:id="@+id/cbrp666"
+        android:layout_width="80dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="310dp"
+        android:layout_marginLeft="100dp"
+
+        android:text="无"
+        android:textColor="@android:color/black"
+        android:textSize="12sp" />
+
+
+    <Button
+        android:id="@+id/button_tijiao1"
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="400dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/blue2"
+        android:onClick="login_mainweixin"
+        android:text="提交审核"
+        android:textColor="#ffffff"
+        android:textSize="14sp" />-->
+
+
+</LinearLayout>

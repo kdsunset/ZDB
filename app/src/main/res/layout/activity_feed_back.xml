@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="cn.zhudai.zin.zhudaibao.activity.WriteCommentActivity">
+    <include layout="@layout/view_mytoolbar"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lines="8"
+        android:gravity="start"
+        android:id="@+id/et_comment"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:padding="8dp"
+        android:textColor="@color/textColorGray"
+        android:textSize="@dimen/textSize_edit"
+        android:background="@drawable/et_border_shape"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:id="@+id/bt_submit"
+        android:text="提  交"
+        android:textSize="@dimen/textSize_btn"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="5dp"
+        android:textColor="@android:color/white"
+        android:background="@drawable/bt_blue_selector"/>
+
+</LinearLayout>
